@@ -3,9 +3,9 @@
 library(ggplot2)
 library(shiny)
 library(reshape2)
-#install.packages('psych')
+install.packages('psych')
 library(psych)
-#install.packages('GGally')
+install.packages('GGally')
 library(GGally)
 
 DF_raw <- read.csv("dataset_Facebook.csv", sep = ";",header = TRUE)
