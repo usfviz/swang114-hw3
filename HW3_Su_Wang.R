@@ -16,8 +16,8 @@ ui <- fluidPage(
   headerPanel(h4('MSAN 622 Assignment 3 - Su Wang')),
   
   sidebarPanel(
-    checkboxGroupInput("type", "Types to show:", unique(DF_raw$Type)),
-    checkboxGroupInput("col", "Correlations to show:", c("Page.total.likes", "Post.Weekday","comment","like","share", "Total.Interactions"))
+    checkboxGroupInput("type", "Types to show for Bubble Plot and Parallel Coordinates:", unique(DF_raw$Type)),
+    checkboxGroupInput("col", "Correlations to show for Scatterplot Matrix:", c("Page.total.likes", "Post.Weekday","comment","like","share", "Total.Interactions"))
   ),
   
   mainPanel(
